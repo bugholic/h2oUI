@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav ul li{
+    list-style: none;
+    @apply mx-3 font-semibold
+}
+
+.primary-text-color{
+    color: #001E4F;
+}
+
+.pageHeading{
+    font-size: 93px;
+    letter-spacing: -3px;
+    font-weight: 400;
+    line-height: 96px;
+}
