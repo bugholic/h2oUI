@@ -13,7 +13,7 @@ export default function RootLayout({
       <title>Circular H2O</title>
       <body>
       <Header />
-      <main className="p-5 px-10"> 
+      <main className="p-5 lg:px-10"> 
       <Navbar />
         {children}
         <Footer />

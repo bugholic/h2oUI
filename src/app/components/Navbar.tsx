@@ -11,7 +11,7 @@ const Navbar = () => {
     width={100}
     />    
 
-    <ul className="flex items-center mx-3 w-full justify-center">
+    <ul className="hidden items-center mx-3 w-full justify-center lg:flex">
       <li>Home</li>
       <li>Who We Are</li>
       <li>Market Applicaions</li>
@@ -21,7 +21,7 @@ const Navbar = () => {
     </ul>
 
     <div>
-      <button className="btn bg-blue-700 text-white w-max p-3 rounded-md">
+      <button className="btn bg-blue-700 text-white w-max p-3 rounded-md hidden lg:block">
         Let's Get Started
       </button>
     </div>

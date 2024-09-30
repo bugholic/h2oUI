@@ -3,7 +3,7 @@ import socialsIcon from "../../../assets/icons/socials.svg"
 
 const Header = () => {
   return (
-    <header className="bg-blue-950  p-2 px-8 flex text-white">
+    <header className="bg-blue-950 p-2 px-8 hidden text-white lg:flex ">
       {/* Left Side Elements */}
       <div className="flex items-center w-5/12 justify-around">
         
