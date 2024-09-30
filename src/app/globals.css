@@ -26,3 +26,29 @@ nav ul li{
 li{
     @apply list-disc text-sm
 }
+
+.pagePointsSection{
+    @apply text-white grid gap-3 grid-cols-2 mt-10
+}
+.pagePointBlock{
+    @apply text-white grid gap-3 grid-cols-2 mt-10
+}
+
+
+.pagePointsSection u{
+    @apply text-2xl font-light mt-7
+}
+
+.pagePointsSection div p{
+    @apply mt-5 font-light
+}
+
+.pageImage{
+    position: absolute;
+    z-index: 0;
+    width: 500px;
+    margin: auto;
+}
+div{
+    z-index: 1;
+}
