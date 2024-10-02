@@ -4,7 +4,7 @@ import pageImage from "../../../assets/images/plant image.svg"
 
 const TechnologyPage = () => {
     return (
-        <main className="flex w-full mt-10">
+        <main className="block sm:flex w-full mt-10">
             <section className="left">
                 <div className='mb-14 flex-col m-auto'>
                     <h1 className='primary-text-color text-7xl'>
@@ -35,9 +35,9 @@ const TechnologyPage = () => {
                     <p className="text-gray-400 text-sm">
                         Evaporating pongs (massive in size, large footprint, and an ancient method for extracting salt)
                     </p>
-                    <div>
+                    <div className="hidden sm:block">
                         <Image
-                        className="w-full" src={pageImage}
+                            className="w-full hidden sm:block" src={pageImage}
                             alt="plant Image"
                         />
                     </div>

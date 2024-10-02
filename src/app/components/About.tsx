@@ -9,7 +9,7 @@ const About = () => {
             <h1 className='primary-text-color text-7xl'>
                 About
             </h1>
-            <h1 className='pl-10 primary-text-color text-7xl'>
+            <h1 className='sm:pl-10 primary-text-color text-7xl'>
                 Circular H2O
             </h1>
             </div>

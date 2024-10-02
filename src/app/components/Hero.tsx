@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <main className="w-screen lg:flex ">
+    <main className="lg:flex w-full">
       <section className="left">
         <h1 className="primary-text-color text-6xl font-bold lg:firstPageHeading mb-4">
           Solutions to meet the world's mineral needs
@@ -44,7 +44,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <section className="right hidden lg:flex pt-40 w-full ">
+      <section className="right hidden lg:flex pt-40 w-full">
         <div>
           <Image
             width={400}
