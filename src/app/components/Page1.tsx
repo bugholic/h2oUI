@@ -2,9 +2,9 @@ import React from 'react'
 
 const Page1 = () => {
     return (
-        <main className='bg-blue-950 p-3 text-sm mt-10'>
+        <main className='w-full bg-blue-950 p-3 text-sm mt-10'>
 
-            <section className='pagePointsSection'>
+            <section className='pagePointsSection text-white'>
                 <u className='text-center'>
                     The Problem
                 </u>
@@ -28,7 +28,7 @@ const Page1 = () => {
                 </div>
             </section>
 
-            <section className='pagePointsSection'>
+            <section className='pagePointsSection text-white'>
                 <u className='text-center'>
                     The Solution
                 </u>
@@ -61,7 +61,7 @@ const Page1 = () => {
                 </div>
             </section>
 
-            <section className='pagePointsSection'>
+            <section className='pagePointsSection text-white'>
                 <u className='text-center'>
                     What can we extract?
                 </u>
@@ -122,7 +122,7 @@ const Page1 = () => {
                 </div>
             </section>
 
-            <section className='pagePointsSection'>
+            <section className='pagePointsSection text-white'>
                 <u className='text-center'>
                     MORE ELEMENTS
                 </u>

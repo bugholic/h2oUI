@@ -1,9 +1,7 @@
-import Image from "next/image"
-import pageImage from "../../../assets/images/view-water-splash.svg"
 
 const Page2 = () => {
     return (
-        <main className="lg:flex w-screen gap-10 mt-10">
+        <main className=" lg:flex w-full gap-10 mt-10">
             <section className="left">
                 <div className='mb-14 flex-col m-auto'>
                     <h1 className='primary-text-color text-7xl'>
@@ -14,14 +12,7 @@ const Page2 = () => {
                     </h1>
                 </div>
 
-                <div className="w-full">
-                    <div className="pageImage">
-
-                    <Image
-                        alt="image"
-                        src={pageImage}
-                        />
-                        </div>
+                <div className="w-full extractionPage">
                     <div className="w-1/2">
                         <div className="bg-gray-300 rounded-full w-7 p-2 text-center">
                             1
@@ -34,15 +25,37 @@ const Page2 = () => {
                         </div>
                     </div>
 
-                    <div className="w-1/2 ml-auto">
+                    <div className="w-2/5 ml-auto">
                         <div className="bg-gray-300 rounded-full w-7 p-2 text-center">
                             2
                         </div>
                         <div className="font-semibold">
                             Salt Settling
                         </div>
-                        <div className="w-4/5">
+                        <div className="w-full">
                             The salts settle at the bottom of the container and are removed as a slurry. The slurry can be fed into a selective precipitation system where specific byproducts can be extracted.
+                        </div>
+                    </div>
+                    <div className="w-1/2">
+                        <div className="bg-gray-300 rounded-full w-7 p-2 text-center">
+                            3
+                        </div>
+                        <div className="font-semibold">
+                        Sequential Salt Precipitation
+                        </div>
+                        <div className="w-4/5">
+                        In the sequential stages, as the DME encounters the salt slurry, it induces the precipitation of salt(s) near saturation. The solid salts may be separated via gravity methods, hydrocyclone, or ultrafiltration. 
+                        </div>
+                    </div>
+                    <div className="w-1/2 ml-auto">
+                        <div className="bg-gray-300 rounded-full w-7 p-2 text-center">
+                            4
+                        </div>
+                        <div className="font-semibold">
+                        DME Gas Separation
+                        </div>
+                        <div className="w-4/5">
+                        The temperature and pressure are then adjusted, allowing the DME to become gas (and separate from the water) and be compressed back to gas to be re-used in a closed-loop cycle.
                         </div>
                     </div>
 

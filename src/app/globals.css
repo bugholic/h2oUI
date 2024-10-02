@@ -5,6 +5,7 @@
 
 body{
     background: #F0F2F5;
+    overflow-x: hidden;
 }
 
 nav ul li{
@@ -28,15 +29,15 @@ li{
 }
 
 .pagePointsSection{
-    @apply text-white grid gap-3 grid-cols-2 mt-10
+    @apply sm:grid gap-3 grid-cols-2 mt-10
 }
 .pagePointBlock{
-    @apply text-white grid gap-3 grid-cols-2 mt-10
+    @apply sm:grid gap-3 grid-cols-2 mt-10
 }
 
 
 .pagePointsSection u{
-    @apply text-2xl font-light mt-7
+    @apply text-2xl font-semibold mt-7
 }
 
 .pagePointsSection div p{
@@ -44,11 +45,22 @@ li{
 }
 
 .pageImage{
-    position: absolute;
-    z-index: 0;
     width: 500px;
     margin: auto;
 }
 div{
     z-index: 1;
+}
+
+.extractionPage{
+    background: url("../../assets/images/view-water-splash.svg");
+    @apply w-full bg-no-repeat bg-center;
+}
+
+.borderY section{
+    @apply border border-x-0 border-t-gray-600
+}
+
+.learnmore{
+    border-bottom: 1px solid #001E4F;
 }

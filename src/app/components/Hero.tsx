@@ -28,7 +28,7 @@ const Hero = () => {
         <div className="mt-40 smallCard w-full hidden lg:flex">
           <div className="imgBlock">
             <Image
-              width={200}
+            className="w-full"
               alt="realistic-water-drop"
               src={realisticWaterDrop}
             />

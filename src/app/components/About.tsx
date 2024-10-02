@@ -3,7 +3,7 @@ import pageImage from "../../../assets/images/hyper-realistic-photo-hovering-sph
 import Button from "./Button"
 const About = () => {
     return (
-        <main className="lg:flex w-screen gap-10 mt-10">
+        <main className="lg:flex gap-10 mt-10">
             <section className="left">
             <div className='mb-14 flex-col m-auto'>
             <h1 className='primary-text-color text-7xl'>
@@ -24,9 +24,9 @@ const About = () => {
             <Button action="Lets Get Started"/>
             </div>
             </section>
-            <section className="right w-full">
+            <section className="right">
                 <Image 
-                width={1000}
+                width={800}
                 src={pageImage}
                 alt="about"
                 />
