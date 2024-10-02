@@ -72,8 +72,15 @@ const PageContent: FC<PageContentProto> = ({ data }) => {
 const Page3 = () => {
 
     return (
-        <main className='mt-5 borderY'>
-
+        <main className='mt-20 borderY '>
+            <div className='mb-14 flex-col m-auto'>
+                    <h1 className='commonPageHeading'>
+                    Market Applications
+                    </h1>
+                    <h1 className='pl-20 primary-text-color lg:text-7xl'>
+                    Circular H2O Zero-Waste Water
+                    </h1>
+                </div>
             <div>
                 {Object.values(pageData).map((data, index) => (
                     <PageContent key={index} data={data} />

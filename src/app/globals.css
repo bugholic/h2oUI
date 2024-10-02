@@ -17,7 +17,7 @@ nav ul li{
     color: #001E4F;
 }
 
-.pageHeading{
+.firstPageHeading{
     font-size: 96px;
     letter-spacing: -3px;
     font-weight: 400;
@@ -63,4 +63,8 @@ div{
 
 .learnmore{
     border-bottom: 1px solid #001E4F;
+}
+
+.commonPageHeading{
+    @apply primary-text-color lg:text-7xl
 }

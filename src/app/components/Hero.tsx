@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <main className="w-screen lg:flex ">
       <section className="left">
-        <h1 className="primary-text-color text-6xl font-bold lg:pageHeading mb-4">
+        <h1 className="primary-text-color text-6xl font-bold lg:firstPageHeading mb-4">
           Solutions to meet the world's mineral needs
         </h1>
 
