@@ -6,6 +6,10 @@ body {
   background: #f0f2f5;
   width: 100%;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 
 nav ul li {
   list-style: none;
@@ -54,7 +58,7 @@ div {
 
 .extractionPage {
   background: url("../../assets/images/view-water-splash.svg");
-  @apply w-full bg-no-repeat bg-center;
+  @apply bg-none sm:w-full bg-no-repeat bg-center;
 }
 
 .borderY section {
@@ -66,7 +70,7 @@ div {
 }
 
 .commonPageHeading {
-  @apply primary-text-color lg:text-7xl;
+  @apply primary-text-color text-3xl sm:text-7xl;
 }
 
 .footercontent {
@@ -87,21 +91,20 @@ div {
   line-height: 2;
   width: 600px;
   margin: auto;
-  @apply max-sm:w-full
+  @apply max-sm:w-full;
 }
 
-.inputName{
-    width: 290px;
-    @apply max-sm:w-full
+.inputName {
+  width: 290px;
+  @apply max-sm:w-full;
 }
 
-.phoneNumberContactPage{
-    border-radius: 0 8px 8px 0; 
-    border-left: none;
+.phoneNumberContactPage {
+  border-radius: 0 8px 8px 0;
+  border-left: none;
 }
-.selectContactPage{
-    border-radius: 8px 0 0 8px; 
-    border: 1px solid gainsboro;
-    border-right: none;
-
+.selectContactPage {
+  border-radius: 8px 0 0 8px;
+  border: 1px solid gainsboro;
+  border-right: none;
 }
