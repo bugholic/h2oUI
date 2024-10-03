@@ -38,7 +38,7 @@ const Hero = () => {
             <div className="ml-2 mt-2 font-bold primary-text-color">
               <h1>Why Circular H2O?</h1>
             </div>
-            <p className="pt-2 ml-2 w-8/12 primary-text-color">
+            <p className="pt-2 sm:ml-2 sm:w-8/12 primary-text-color">
               As the world shifts towards a more sustainable future,
             </p>
           </div>

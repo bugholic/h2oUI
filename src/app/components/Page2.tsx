@@ -13,19 +13,19 @@ const Page2 = () => {
                 </div>
 
                 <div className="w-full extractionPage">
-                    <div className="w-1/2">
+                    <div className="sm:w-1/2">
                         <div className="bg-gray-300 rounded-full w-7 p-2 text-center">
                             1
                         </div>
                         <div className="font-semibold">
                             Initial Step
                         </div>
-                        <div className="w-4/5">
+                        <div className="sm:w-4/5">
                             In the first stage of the system, the liquid DME comes into contact with the brine or aqueous (fluid to be treated) at a selected controlled pressure and temperature point, which induces the precipitation of salts.
                         </div>
                     </div>
 
-                    <div className="w-2/5 ml-auto">
+                    <div className="sm:w-2/5 ml-auto">
                         <div className="bg-gray-300 rounded-full w-7 p-2 text-center">
                             2
                         </div>
@@ -36,18 +36,18 @@ const Page2 = () => {
                             The salts settle at the bottom of the container and are removed as a slurry. The slurry can be fed into a selective precipitation system where specific byproducts can be extracted.
                         </div>
                     </div>
-                    <div className="w-1/2">
+                    <div className="sm:w-1/2">
                         <div className="bg-gray-300 rounded-full w-7 p-2 text-center">
                             3
                         </div>
                         <div className="font-semibold">
                         Sequential Salt Precipitation
                         </div>
-                        <div className="w-4/5">
+                        <div className="sm:w-4/5">
                         In the sequential stages, as the DME encounters the salt slurry, it induces the precipitation of salt(s) near saturation. The solid salts may be separated via gravity methods, hydrocyclone, or ultrafiltration. 
                         </div>
                     </div>
-                    <div className="w-1/2 ml-auto">
+                    <div className="sm:w-1/2 ml-auto">
                         <div className="bg-gray-300 rounded-full w-7 p-2 text-center">
                             4
                         </div>

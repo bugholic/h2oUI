@@ -15,7 +15,7 @@ const Information = () => {
                         Mineral Extraction System optimizes
                     </h1>
                 </div>
-                <p className="w-3/4">
+                <p className="sm:w-3/4">
                     Circular H2O, an Eden company, was founded with a mission to address the challenges surrounding energy-efficient mineral extraction and water accessibility. Along with global innovation leaders, we are commercializing a technology that aim to enable an economical path toward a full and circular journey for water and brine processing. The goal is a process where the value is extracted from the brine, virtually leading to a zero-waste process.
                 </p>
                 <br />
@@ -27,12 +27,12 @@ const Information = () => {
                             alt="who are we"
                         />
                     </div>
-                    <div className="ml-auto w-3/4">
-                <p className="w-2/4 ml-auto">
+                    <div className="ml-auto sm:w-3/4">
+                <p className="sm:w-2/4 ml-auto">
                     The company aims to mature downstream brine processing, by enabling a high purity selective mineral precipitation - leading to more control over the separation for the first time.
                 <br />
                 </p>
-                <div className="mt-5 ml-auto w-2/4">
+                <div className="mt-5 ml-auto sm:w-2/4">
                     <Button action="Lets Get Started" />
                 </div>
                 <div className="mt-10">

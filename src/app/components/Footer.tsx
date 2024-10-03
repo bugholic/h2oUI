@@ -16,7 +16,7 @@ const footer = () => {
           </div>
         </div>
         <aside>
-          <div className="getInTouch flex items-center justify-between w-96 px-10 py-3 text-white  bg-purple-600 rounded-full">
+          <div className="getInTouch w-full flex items-center justify-between px-10 py-3 text-white  bg-purple-600 rounded-full">
             <div>
               Get in touch:
             </div>
@@ -36,7 +36,7 @@ const footer = () => {
               We'd love to hear about your project.
             </p>
 
-            <div className="w-80 m-auto my-10 py-3  text-gray-900  text-center bg-white rounded-full">
+            <div className="m-auto my-10 py-3 sm:w-80 text-gray-900  text-center bg-white rounded-full">
               Contact Us
             </div>
           </div>
