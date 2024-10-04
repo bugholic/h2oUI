@@ -47,7 +47,7 @@ interface cardProps {
 
 const Card: FC<cardProps> = ({ cardContentProps }) => {
     return (
-        <section className='flex flex-col border border-gray-300'>
+        <section className='flex flex-col border border-gray-300 my-5'>
             <div className="w-full">
                 <Image
                     src={cardContentProps.imgLink}
