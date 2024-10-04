@@ -17,6 +17,12 @@ nav ul li,
   @apply mx-3 font-semibold;
 }
 
+nav ul li:hover,
+.navList li:hover {
+  border-bottom: 2px solid gray;
+  transition: all 0.5s ease-in-out ;
+}
+
 .primary-text-color {
   color: #001e4f;
 }
