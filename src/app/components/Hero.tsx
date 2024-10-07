@@ -7,11 +7,11 @@ const Hero = () => {
   return (
     <main className="lg:flex w-full">
       <section className="left">
-        <h1 className="primary-text-color mt-3 font-semibold mb-4 text-3xl sm:text-7xl lg:tracking-tighter">
+        <h1 className="text-5xl my-8 tracking-tight md:text-8xl">
           Solutions to meet the world's mineral needs
         </h1>
 
-        <div>
+        <div className="text-sm my-5 lg:text-lg">
           As the world shifts towards a more sustainable future, our focus has
           become centered around our most significant challenges: mineral
           extraction, water accessibility, and energy efficiency. Our novel Zero
@@ -28,7 +28,7 @@ const Hero = () => {
           <Button
             bgcolor="bg-white"
             textcolor="text-blue-600"
-            action="Learn More ->"
+            action="Learn More"
           />
         </div>
 

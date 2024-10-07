@@ -10,10 +10,10 @@ const Page2 = () => {
         />
         <div className="w-full extractionPage">
           <div className="sm:w-1/2">
-            <div className="bg-gray-300 rounded-full w-7 p-2 text-center">
+            <div className="bg-gray-300 rounded-full w-10 p-2 text-center my-5">
               1
             </div>
-            <div className="font-semibold">Initial Step</div>
+            <div className="font-semibold">SSWE System</div>
             <div className="sm:w-4/5">
               In the first stage of the system, the liquid DME comes into
               contact with the brine or aqueous (fluid to be treated) at a
@@ -23,7 +23,7 @@ const Page2 = () => {
           </div>
 
           <div className="sm:w-2/5 ml-auto">
-            <div className="bg-gray-300 rounded-full w-7 p-2 text-center">
+            <div className="bg-gray-300 rounded-full w-10 p-2 text-center my-5">
               2
             </div>
             <div className="font-semibold">Salt Settling</div>
@@ -34,7 +34,7 @@ const Page2 = () => {
             </div>
           </div>
           <div className="sm:w-1/2">
-            <div className="bg-gray-300 rounded-full w-7 p-2 text-center">
+            <div className="bg-gray-300 rounded-full w-10 p-2 text-center my-5">
               3
             </div>
             <div className="font-semibold">Sequential Salt Precipitation</div>
@@ -46,7 +46,7 @@ const Page2 = () => {
             </div>
           </div>
           <div className="sm:w-1/2 ml-auto">
-            <div className="bg-gray-300 rounded-full w-7 p-2 text-center">
+            <div className="bg-gray-300 rounded-full w-10 p-2 text-center my-5">
               4
             </div>
             <div className="font-semibold">DME Gas Separation</div>

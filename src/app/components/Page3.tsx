@@ -56,19 +56,19 @@ const PageContent: FC<PageContentProto> = ({ data }) => {
           <div className="pl-2 text-2xl font-semibold">{data.heading}</div>
         </div>
         <div className="flex mt-5">
-          <div className="learnmore">Learn More</div>
+          <div className="border-b-2 border-gray-400 my-5">Learn More</div>
           <Image src={learnmorearrow} alt="learnmorearrow" />
         </div>
       </div>
 
       <div className="pagePointBlock">
         <div>
-          <b>The Problem</b>
-          <p className="font-light">{data.para1}</p>
+          <div className="my-5 font-bold">The Problem</div>
+          <p className="font-light leading-6">{data.para1}</p>
         </div>
         <div>
-          <b>The Solution</b>
-          <p className="font-light">{data.para2}</p>
+          <div className="my-5 font-bold">The Solution</div>
+          <p className="font-light leading-6">{data.para2}</p>
         </div>
       </div>
     </section>
@@ -78,10 +78,9 @@ const PageContent: FC<PageContentProto> = ({ data }) => {
 const Page3 = () => {
   return (
     <main className="mt-20 borderY ">
-      <Heading
-        head1={"Market Appplications"}
-        head2={"Circular H2O Zero-Waste Water"}
-      />
+      <Heading head1={"Market Appplications"} />
+
+      <Heading head2={"Circular H2O Zero-Waste Water"} />
 
       <div>
         {Object.values(pageData).map((data, index) => (

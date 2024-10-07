@@ -9,7 +9,7 @@ const cardContent =
     {
         imgLink: cardImage,
         heading: "How to write content about your photographs",
-        content: "Lorem ipsum dolor, sit amet adipi elit. Quaerat adipisci minus culpa repudiandae perferendis reiciendis!",
+        content: "Lorem ipsum dolor, sit amet adipi elit. Quaerat adipisci  perferendis reiciendis!",
         topic: "Growth",
         readTime: "7 mins"
     },
@@ -17,7 +17,7 @@ const cardContent =
     {
         imgLink: cardImage,
         heading: "How to write content about your photographs",
-        content: "Lorem ipsum dolor, sit amet adipi elit. Quaerat adipisci minus culpa repudiandae perferendis reiciendis!",
+        content: "Lorem ipsum dolor, sit amet adipi elit. Quaerat adipisci  perferendis reiciendis!",
         topic: "Fitness",
         readTime: "9 mins"
     },
@@ -25,7 +25,7 @@ const cardContent =
     {
         imgLink: cardImage,
         heading: "How to write content about your photographs",
-        content: "Lorem ipsum dolor, sit amet adipi elit. Quaerat adipisci minus culpa repudiandae perferendis reiciendis!",
+        content: "Lorem ipsum dolor, sit amet adipi elit. Quaerat adipisci  perferendis reiciendis!",
         topic: "Growth",
         readTime: "7 mins"
     }
@@ -47,24 +47,23 @@ interface cardProps {
 
 const Card: FC<cardProps> = ({ cardContentProps }) => {
     return (
-        <section className='flex flex-col border border-gray-300 my-5'>
+        <section className='flex flex-col border border-gray-300 my-5 rounded-3xl rounded-b-lg'>
             <div className="w-full">
                 <Image
                     src={cardContentProps.imgLink}
                     alt="img"
                     width={100}
-                    height={100}
-                    className="w-full"
+                    className="w-full rounded-3xl"
                 />
             </div>
-            <h3 className="font-bold p-5 font-serif">
+            <h3 className="font-bold p-2 font-serif">
                 {cardContentProps.heading}
             </h3>
-            <p className="p-5 text-gray-600 font-serif">
+            <p className="p-2 text-gray-600 font-serif">
                 {cardContentProps.content}
             </p>
 
-            <div className="p-5 text-gray-600 font-semibold border border-gray-300">
+            <div className="p-2 text-gray-600 font-semibold border border-gray-300 rounded-b-lg">
                 {cardContentProps.topic} | {cardContentProps.readTime} Read
             </div>
         </section>

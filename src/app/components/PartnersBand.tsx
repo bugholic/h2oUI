@@ -10,6 +10,7 @@ const PartnersBand = () => {
     </div>
     <div>
     <Image 
+    className="w-52 md:w-full"
       src={companiesLogo}
       alt="company logos"
     />

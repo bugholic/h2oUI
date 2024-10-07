@@ -5,13 +5,13 @@ import Heading from "./Heading";
 
 const Information = () => {
   return (
-    <main className="flex w-full gap-10 mt-10">
+    <main className="flex w-full gap-10 my-20">
       <section className="left">
         <Heading
           head1={"Who We Are"}
-          head2={"  Mineral Extraction System optimizes"}
+          head2={"Mineral Extraction System optimizes"}
         />
-        <p className="sm:w-3/4">
+        <p className="font-sm leading-8">
           Circular H2O, an Eden company, was founded with a mission to address
           the challenges surrounding energy-efficient mineral extraction and
           water accessibility. Along with global innovation leaders, we are
@@ -21,33 +21,35 @@ const Information = () => {
           virtually leading to a zero-waste process.
         </p>
         <br />
-        <div className=" hidden sm:flex">
-          <div>
+        <div className="sm:flex">
+          <div className="hidden">
             <Image src={pageImage} width={400} alt="who are we" />
           </div>
-          <div className="ml-auto sm:w-3/4">
-            <p className="sm:w-2/4 ml-auto">
+          <div className="">
+            <p className="font-sm leading-8">
               The company aims to mature downstream brine processing, by
               enabling a high purity selective mineral precipitation - leading
               to more control over the separation for the first time.
               <br />
             </p>
-            <div className="mt-5 ml-auto sm:w-2/4">
+            <div className=" my-5">
               <Button action="Lets Get Started" />
             </div>
             <div className="mt-10">
-              <h6 className="font-bold">Technology</h6>
-              <div className=" mt-5 gap-16  block sm:flex page-list">
-                <ul>
+              <h6 className="font-bold text-lg">Technology</h6>
+              <div className=" mt-5 gap-16 pl-8 sm:flex">
+                <ul className="list-disc">
                   <li>Evaporation and membrane free recovery</li>
                   <li>Improves efficiency in recovery rate</li>
                 </ul>
-                <ul>
+                <br />
+                <ul className="list-disc">
                   <li>Target selective precipitation of minerals</li>
                   <li>Increases purity and value of extracted minerals</li>
                   <li>Minimizes energy consumption</li>
                 </ul>
-                <ul>
+                <br />
+                <ul className="list-disc">
                   <li>Minimizes energy consumption</li>
                 </ul>
               </div>

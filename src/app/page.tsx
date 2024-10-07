@@ -20,7 +20,9 @@ const page = () => {
     <Page1 />
     <Page2 />
     <Page3 />
+    <div className="bg-white py-5">
     <NewsUpdate />
+    </div>
     </>
   );
 };

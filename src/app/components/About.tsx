@@ -6,8 +6,11 @@ const About = () => {
   return (
     <main className="lg:flex gap-10 mt-10">
       <section className="left">
-
-        <Heading head1={"About"} head2={"Circular H2O"} />
+        <Heading
+          head1={"About"}
+          head2={["Circular ", "H", <sub>2</sub>, "O"]}
+          pl={"pl-10"}
+        />
         <p className="sm:w-3/4">
           Circular H2O, an Eden company, was founded with a mission to address
           the challenges surrounding energy-efficient mineral extraction and
@@ -23,12 +26,12 @@ const About = () => {
           high purity selective mineral precipitation - leading to more control
           over the separation for the first time.
         </p>
-        <div className="mt-5">
+        <div className="my-10">
           <Button action="Lets Get Started" />
         </div>
       </section>
       <section className="right">
-        <Image width={800} src={pageImage} alt="about" />
+        <Image width={100} className="w-full rounded-md" src={pageImage} alt="about" />
       </section>
     </main>
   );
