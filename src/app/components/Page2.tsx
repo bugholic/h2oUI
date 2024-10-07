@@ -2,19 +2,19 @@ import Heading from "./Heading";
 
 const Page2 = () => {
   return (
-    <main className=" lg:flex w-full gap-10 mt-10">
+    <main className="md:workExplainPage md:flex w-full gap-10 mt-10">
       <section className="left">
         <Heading
           head1="How It Works"
           head2="In Mineral Extraction System Optimizes"
         />
-        <div className="w-full extractionPage">
-          <div className="sm:w-1/2">
+        <div className="w-full md:extractionPage">
+          <div className="md:w-1/2">
             <div className="bg-gray-300 rounded-full w-10 p-2 text-center my-5">
               1
             </div>
             <div className="font-semibold">SSWE System</div>
-            <div className="sm:w-4/5">
+            <div className="md:w-4/5">
               In the first stage of the system, the liquid DME comes into
               contact with the brine or aqueous (fluid to be treated) at a
               selected controlled pressure and temperature point, which induces
@@ -22,7 +22,7 @@ const Page2 = () => {
             </div>
           </div>
 
-          <div className="sm:w-2/5 ml-auto">
+          <div className="md:w-2/5 ml-auto">
             <div className="bg-gray-300 rounded-full w-10 p-2 text-center my-5">
               2
             </div>
@@ -33,19 +33,19 @@ const Page2 = () => {
               system where specific byproducts can be extracted.
             </div>
           </div>
-          <div className="sm:w-1/2">
+          <div className="md:w-1/2">
             <div className="bg-gray-300 rounded-full w-10 p-2 text-center my-5">
               3
             </div>
             <div className="font-semibold">Sequential Salt Precipitation</div>
-            <div className="sm:w-4/5">
+            <div className="md:w-4/5">
               In the sequential stages, as the DME encounters the salt slurry,
               it induces the precipitation of salt(s) near saturation. The solid
               salts may be separated via gravity methods, hydrocyclone, or
               ultrafiltration. 
             </div>
           </div>
-          <div className="sm:w-1/2 ml-auto">
+          <div className="md:w-1/2 ml-auto">
             <div className="bg-gray-300 rounded-full w-10 p-2 text-center my-5">
               4
             </div>

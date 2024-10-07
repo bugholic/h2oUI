@@ -49,7 +49,7 @@ interface PageContentProto {
 
 const PageContent: FC<PageContentProto> = ({ data }) => {
   return (
-    <section className="pagePointsSection">
+    <section className="pagePointsSection font-normal text-sm md:grid gap-2 grid-flow-col grid-cols-3">
       <div className="flex flex-col items-start mt-7">
         <div className="flex">
           <Image src={tick} alt="verified tick" />
@@ -60,17 +60,14 @@ const PageContent: FC<PageContentProto> = ({ data }) => {
           <Image src={learnmorearrow} alt="learnmorearrow" />
         </div>
       </div>
-
-      <div className="pagePointBlock">
         <div>
-          <div className="my-5 font-bold">The Problem</div>
+          <div className="my-5 font-bold text-lg">The Problem</div>
           <p className="font-light leading-6">{data.para1}</p>
         </div>
         <div>
-          <div className="my-5 font-bold">The Solution</div>
+          <div className="my-5 font-bold text-lg">The Solution</div>
           <p className="font-light leading-6">{data.para2}</p>
         </div>
-      </div>
     </section>
   );
 };

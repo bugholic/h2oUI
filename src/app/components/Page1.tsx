@@ -2,78 +2,67 @@ import React from "react";
 
 const Page1 = () => {
   return (
-    <main className="w-full bg-blue-950 p-3 text-sm mt-10">
-      <section className="pagePointsSection text-white">
+    <main className="w-full bg-blue-950 p-3 text-xs mt-10 leading-7">
+      <section className="md:grid gap-5 grid-flow-col grid-cols-3 md:my-10 text-white">
         <div className="my-10">
-          <u className="text-center text-2xl">The Problem</u>
+          <u className="text-center text-2xl italic ">The Problem</u>
         </div>
 
-        <div className="pagePointBlock">
-          <div>
-            <div className="my-5 font-semibold">
-              Minerals are in High Demand
-            </div>
+        <div>
+          <div className="my-5 font-semibold">
+            Minerals are in High Demand
+          </div>
 
-            <p className="font-light leading-6 text-sm">
-              The world is heavily reliant on minerals like sodium, magnesium,
-              calcium, bromine, lithium, and potassium. Many of these
-              industries, such as magnesium and bromine, are struggling to keep
-              up with current demand. These minerals can be found in large
-              amounts in different brine (sea water, geothermal brine, oil&gas
-              co-produce).
-            </p>
-          </div>
-          <div>
-            <div className="my-5 font-semibold">
-              Potable Water Needs are Ever-Increasing
-            </div>
-            <p className="font-light leading-6 text-sm">
-              Many places in the world don't have access to enough naturally
-              potable water and require desalinated water. In the MENA region,
-              for example, water consumption is higher than average, but access
-              to potable running water is scarce in many countries. In the U.S.,
-              many regions are already experiencing water shortage,
-            </p>
-          </div>
+          <p className="font-light leading-6 text-xs">
+            The world is heavily reliant on minerals like sodium, magnesium,
+            calcium, bromine, lithium, and potassium. Many of these
+            industries, such as magnesium and bromine, are struggling to keep
+            up with current demand. These minerals can be found in large
+            amounts in different brine (sea water, geothermal brine, oil&gas
+            co-produce).
+          </p>
         </div>
+
+        <div>
+          <div className="my-5 font-semibold">
+            Potable Water Needs are Ever-Increasing
+          </div>
+          <p className="font-light leading-6 text-xs">
+            Many places in the world don't have access to enough naturally
+            potable water and require desalinated water. In the MENA region,
+            for example, water consumption is higher than average, but access
+            to potable running water is scarce in many countries. In the U.S.,
+            many regions are already experiencing water shortage,
+          </p>
+        </div>
+
       </section>
 
-      <section className="pagePointsSection text-white">
+      <section className="md:grid gap-5 grid-flow-col grid-cols-3 md:my-10 text-white">
         <div className="my-10">
-          <u className="text-center text-2xl">The Solution</u>
+          <u className="text-center text-2xl italic ">The Solution</u>
         </div>
-        <div className="pagePointBlock">
-          <div className="leading-6">
-            <div className="my-5 font-semibold w-3/4">
+        <div className="leading-6">
+          <div>
+
+            <div className="my-5 tracking-tighter font-semibold w-3/4">
               Zero Liquid Discharge (ZLD) & Mineral Extraction System
             </div>
 
-            <p className="font-light leading-6 text-sm">
+            <p className="font-light leading-6 text-xs">
               Circular H2O's Zero Liquid Discharge (ZLD) and Mineral Extraction
               System has made mineral extraction from seawater and other brines
               more cost-competitive and more energy-efficient than traditional
               mining processes. Coupled in the right sequence, this solution is
               intended to form a full downstream brine processing sequence.
             </p>
-          </div>
-          <div className="leading-6">
-            <div className="my-5 font-semibold w-3/4">
-              Potable Water Needs are Ever-Increasing
-            </div>
-            <p className="font-light">
-              In this system, brine is mixed with the miscible organic solvent,
-              removing water and concentrating the brine phase ultimately
-              precipitation of solutes from the brine solution. The solid
-              precipitates and other soluble are separated before the mixture is
-              decomposed to drive the vaporization of miscible organic solvent.
-            </p>
-          </div>
 
-          <div className="leading-6">
-            <div className="my-5 font-semibold w-3/4">
+          </div>
+          <div>
+            <div className="my-5 tracking-tighter font-semibold w-3/4">
               Switchable Solvent Fractional Precipitation
             </div>
-            <p className="font-light">
+            <p className="font-light leading-6 text-xs">
               In this system, hard water or high concentration brine mixes in
               the system as a gas or liquid, driving the fractional
               precipitation of solutes from the saline brine solution. Solid
@@ -83,13 +72,27 @@ const Page1 = () => {
             </p>
           </div>
         </div>
+        <div className="leading-6">
+          <div className="my-5 tracking-tighter font-semibold w-3/4">
+            Potable Water Needs are Ever-Increasing
+          </div>
+          <p className="font-light leading-6 text-xs">
+            In this system, brine is mixed with the miscible organic solvent,
+            removing water and concentrating the brine phase ultimately
+            precipitation of solutes from the brine solution. The solid
+            precipitates and other soluble are separated before the mixture is
+            decomposed to drive the vaporization of miscible organic solvent.
+          </p>
+        </div>
+
+
       </section>
 
-      <section className="pagePointsSection text-white">
+      <section className="md:grid gap-5 grid-flow-col grid-cols-3 md:my-10 text-white">
         <div className="my-10">
-          <u className="text-center text-2xl">What can we extract?</u>
+          <u className="italic text-center text-2xl">What can we extract?</u>
         </div>
-        <div className="text-white md:grid gap-3 grid-cols-3 mt-10">
+        <div className="text-white md:col-span-2 md:grid grid-flow-col grid-rows-3 gap-2">
           <div className="leading-6">
             <div className="my-5 font-semibold w-3/4">Lithium Li</div>
             <p>
@@ -127,14 +130,14 @@ const Page1 = () => {
             <p className="font-light">
               After sodium, it is the most commonly found mineral in oceans.
               Magnesium salts have a wide range of industrial and dietary use
-              cases.{" "}
+              cases.
             </p>
           </div>
           <div className="leading-normal">
             <div className="my-5 font-semibold w-3/4"> Sulfate SO4</div>
             <p className="font-light">
               Sulphate-based salts are used as foaming agents, care products,
-              construction, and other industrial applications.{" "}
+              construction, and other industrial applications.
             </p>
           </div>
 
@@ -143,7 +146,7 @@ const Page1 = () => {
             <p className="font-light">
               Potassium is the sixth most abundant element dissolved in
               seawater. Potassium has many dietary benefits and agriculture
-              uses.{" "}
+              uses.
             </p>
           </div>
 
@@ -151,17 +154,17 @@ const Page1 = () => {
             <div className="my-5 font-semibold w-3/4"> Chloride Cl-</div>
             <p className="font-light">
               Common salt can be separated from sea water by evaporation as
-              NaCl.{" "}
+              NaCl.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="pagePointsSection text-white">
+      <section className="md:grid gap-5 grid-flow-col grid-cols-3 text-white">
         <div className="my-10">
-          <u className="text-center text-2xl">MORE ELEMENTS</u>
+          <u className="text-center text-2xl italic ">MORE ELEMENTS</u>
         </div>
-        <div className="text-white grid gap-2 grid-cols-2 md:grid-cols-5 mt-10 text-lg">
+        <div className="text-white grid gap-2 grid-cols-2 md:grid-cols-5 mt-10 text-lg md:col-span-2 leading-10 md:text-sm">
           <span>Ammonium (NH4+)</span>
           <span> Iron (Fe++)</span>
           <span>Boron (as B+++)</span>

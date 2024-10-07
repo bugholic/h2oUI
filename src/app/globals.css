@@ -10,16 +10,28 @@ body {
   font-family: "PP Neue Montreal", sans-serif;
 }
 
-nav > ul > li {
+nav>ul>li {
   transition: all ease-in-out 1ms;
   @apply mx-5 font-semibold;
 }
+
 nav ul li:hover {
   border-bottom: 1px solid #494646;
 }
 
-.pagePointsSection{
-  border-top: 2px solid gray; 
-  border-bottom: 2px solid gray; 
+.pagePointsSection {
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
   padding: 10px 0;
+}
+
+footer {
+  background: #1B2745;
+}
+
+.extractionPage {
+  background-image:url("../../assets/images/view-water-splash.svg");
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
 }

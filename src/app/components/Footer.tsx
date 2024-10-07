@@ -1,17 +1,18 @@
 import Image from "next/image";
 import btnIcon from "../../../assets/icons/button Icons.svg";
 import Link from "next/link";
+import Button from "./Button";
 
 const footer = () => {
   return (
-    <footer className="p-10 w-full footercontent  ">
+    <footer className="p-10 w-full">
       <main className="sm:flex justify-between">
         <div className="sm:w-1/2">
-          <div className="text-white text-3xl sm:text-4xl">
+          <div className="text-white text-3xl leading-9 font-normal tracking-tighter">
             Our mission is to address challenges and accelerate change in
             mineral extraction and water desalination.
           </div>
-          <div className="text-gray-300 mt-28 mb-5">
+          <div className="text-gray-300 mt-28 mb-5 leading-10">
             EMAIL ADDRESS
             <p>info@cicularh2o.com</p>
           </div>
@@ -25,14 +26,14 @@ const footer = () => {
             </div>
           </div>
           </Link>
-          <div className="bg-blue-950 mt-10 text-center rounded-3xl text-white h-60">
-            <h2 className="font-bold p-10 pb-2 sm:text-4xl">
+          <div className="bg-blue-950 mt-10 px-5 py-10 text-center rounded-3xl text-white h-60">
+            <h2 className="font-bold text-3xl pb-2 sm:text-4xl">
               Let's get started
             </h2>
-            <p>We'd love to hear about your project.</p>
+            <p className="text-sm">We'd love to hear about your project.</p>
 
             <Link href="/contact-us">
-              <div className="m-auto my-10 py-3 sm:w-80 text-gray-900  text-center bg-white rounded-full">
+              <div className="m-auto my-10 py-3 text-gray-900 text-center bg-white rounded-full">
                 Contact Us
               </div>
             </Link>
