@@ -12,7 +12,7 @@ import NewsUpdate from "./components/NewsUpdate";
 const page = () => {
   return (
     <>
-      <div className="p-5 lg:pl-10">
+      <div className="p-5 lg:px-10">
         <Hero />
       </div>
       <PartnersBand />
