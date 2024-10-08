@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <main className="lg:flex w-full">
       <section className="left">
-        <h1 className="text-5xl my-8 tracking-tight md:text-8xl">
+        <h1 className="primary-text-color text-5xl my-8 tracking-tight w-full md:text-7xl">
           Solutions to meet the world's mineral needs
         </h1>
 
@@ -19,17 +19,21 @@ const Hero = () => {
           water desalination process, enabling a more cost- and
           resource-efficient extraction process of rare earth.
         </div>
-        <div className="flex justify-between lg:w-4/12 mt-5">
-          <Button
-            bgcolor="bg-blue-600"
-            textcolor="text-white"
-            action="Let's Get Started"
-          />
-          <Button
-            bgcolor="bg-white"
-            textcolor="text-blue-600"
-            action="Learn More"
-          />
+        <div className="flex mt-5">
+          <div className="mx-5 ml-0">
+            <Button
+              bgcolor="bg-blue-600"
+              textcolor="text-white"
+              action="Let's Get Started"
+            />
+          </div>
+          <div className="mx-5">
+            <Button
+              bgcolor="bg-white"
+              textcolor="text-blue-600"
+              action="Learn More"
+            />
+          </div>
         </div>
 
         <div className="mt-40 smallCard w-full hidden lg:flex">

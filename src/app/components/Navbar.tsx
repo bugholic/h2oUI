@@ -6,8 +6,6 @@ import menu from "../../../assets/icons/menu.svg";
 import Button from "./Button";
 import Link from "next/link";
 import { useState } from "react";
-import { setInterval } from "timers/promises";
-import { setTimeout } from "timers";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,26 +20,26 @@ const Navbar = () => {
         <Link href="/">
           <Image alt="H2O" src={logo} width={100} />
         </Link>
-        <ul className="items-center hidden sm:bg-transparent mx-3 w-full justify-center lg:flex">
-          <li>
+        <div className="items-center hidden sm:bg-transparent mx-3 w-full justify-center lg:flex">
+          <span>
             <Link href="/">Home</Link>
-          </li>
-          <li>
+          </span>
+          <span>
             <Link href="/"> Who We Are </Link>
-          </li>
-          <li>
+          </span>
+          <span>
             <Link href="/"> Market Applicaions </Link>
-          </li>
-          <li>
+          </span>
+          <span>
             <Link href="/"> About Us </Link>
-          </li>
-          <li>
+          </span>
+          <span>
             <Link href="/"> How It Works</Link>
-          </li>
-          <li>
+          </span>
+          <span>
             <Link href="/contact-us">Contact Us</Link>
-          </li>
-        </ul>
+          </span>
+        </div>
 
         {/* Mobile navigation */}
         <div className="block ml-auto lg:hidden">
@@ -56,26 +54,26 @@ const Navbar = () => {
       {isMenuOpen && (
         <>
           <div className="flex flex-col">
-            <ul className="navList items-center mx-3 w-full justify-center">
-              <li>
+            <div className="navList items-center mx-3 w-full justify-center">
+              <span>
                 <Link href="/">Home</Link>
-              </li>
-              <li>
+              </span>
+              <span>
                 <Link href="/"> Who We Are </Link>
-              </li>
-              <li>
+              </span>
+              <span>
                 <Link href="/"> Market Applicaions </Link>
-              </li>
-              <li>
+              </span>
+              <span>
                 <Link href="/"> About Us </Link>
-              </li>
-              <li>
+              </span>
+              <span>
                 <Link href="/"> How It Works</Link>
-              </li>
-              <li>
+              </span>
+              <span>
                 <Link href="/contact-us">Contact Us</Link>
-              </li>
-            </ul>
+              </span>
+            </div>
             <Button
               bgcolor="bg-blue-600"
               textcolor="text-white"

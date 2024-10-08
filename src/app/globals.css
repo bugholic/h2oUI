@@ -5,17 +5,28 @@
 @import url("https://fonts.cdnfonts.com/css/pp-neue-montreal");
 
 body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
   background: #f0f2f5;
   width: 100%;
   font-family: "PP Neue Montreal", sans-serif;
 }
 
-nav>ul>li {
+.elmentSize{
+@apply p-5 lg:px-10
+}
+
+.primary-text-color{
+  color: #1B2745;
+}
+
+nav>div>span {
   transition: all ease-in-out 1ms;
   @apply mx-5 font-semibold;
 }
 
-nav ul li:hover {
+nav>div>span:hover {
   border-bottom: 1px solid #494646;
 }
 
@@ -29,9 +40,9 @@ footer {
   background: #1B2745;
 }
 
-.extractionPage {
-  background-image:url("../../assets/images/view-water-splash.svg");
-  background-position: center;
-  object-fit: cover;
-  background-repeat: no-repeat;
+
+.workExplainPage {
+  background-image:url('../../assets//images//view-water-splash.svg');
+  width: auto;
+  height: auto;
 }

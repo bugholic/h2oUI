@@ -2,8 +2,8 @@ import React from "react";
 
 const Page1 = () => {
   return (
-    <main className="w-full bg-blue-950 p-3 text-xs mt-10 leading-7">
-      <section className="md:grid gap-5 grid-flow-col grid-cols-3 md:my-10 text-white">
+    <main className="w-full bg-blue-950 p-3 text-xs md:p-10 mt-10 leading-7">
+      <section className="md:grid gap-10 grid-flow-col grid-cols-3 md:my-10 text-white">
         <div className="my-10">
           <u className="text-center text-2xl italic ">The Problem</u>
         </div>
@@ -38,7 +38,7 @@ const Page1 = () => {
 
       </section>
 
-      <section className="md:grid gap-5 grid-flow-col grid-cols-3 md:my-10 text-white">
+      <section className="md:grid gap-10 grid-flow-col grid-cols-3 md:my-10 text-white">
         <div className="my-10">
           <u className="text-center text-2xl italic ">The Solution</u>
         </div>
@@ -88,7 +88,7 @@ const Page1 = () => {
 
       </section>
 
-      <section className="md:grid gap-5 grid-flow-col grid-cols-3 md:my-10 text-white">
+      <section className="md:grid gap-10 grid-flow-col grid-cols-3 md:my-10 text-white">
         <div className="my-10">
           <u className="italic text-center text-2xl">What can we extract?</u>
         </div>
@@ -160,7 +160,7 @@ const Page1 = () => {
         </div>
       </section>
 
-      <section className="md:grid gap-5 grid-flow-col grid-cols-3 text-white">
+      <section className="md:grid gap-10 grid-flow-col grid-cols-3 text-white">
         <div className="my-10">
           <u className="text-center text-2xl italic ">MORE ELEMENTS</u>
         </div>

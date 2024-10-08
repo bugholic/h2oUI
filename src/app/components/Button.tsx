@@ -12,7 +12,7 @@ const Button: React.FC<ButtonProps> = ({ bgcolor, textcolor , border, action}) =
     <button
       className={`btn ${bgcolor ? bgcolor : "bg-blue-600"} ${
         textcolor ? textcolor : "text-white"
-      } ${border ? border : ""} w-40 my-2 p-3 rounded-md hover:bg-blue-500 hover:text-white`}
+      } ${border ? border : ""} w-40 my-2 p-3 rounded-md hover:bg-opacity-90`}
     >
     {action}
     </button>

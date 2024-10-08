@@ -22,22 +22,22 @@ const Information = () => {
         </p>
         <br />
         <div className="sm:flex">
-          <div className="hidden">
-            <Image src={pageImage} width={400} alt="who are we" />
+          <div className="hidden md:flex">
+            <Image priority={false} src={pageImage} width={400} alt="who are we" />
           </div>
           <div className="">
-            <p className="font-sm leading-8">
+            <div className="font-sm leading-8 md:ml-auto md:w-1/2">
               The company aims to mature downstream brine processing, by
               enabling a high purity selective mineral precipitation - leading
               to more control over the separation for the first time.
               <br />
-            </p>
             <div className=" my-5">
               <Button action="Lets Get Started" />
             </div>
+            </div>
             <div className="mt-10">
               <h6 className="font-bold text-lg">Technology</h6>
-              <div className=" mt-5 gap-16 pl-8 sm:flex">
+              <div className=" mt-5 gap-16 pl-8 text-xs leading-6 md:flex">
                 <ul className="list-disc">
                   <li>Evaporation and membrane free recovery</li>
                   <li>Improves efficiency in recovery rate</li>
