@@ -13,10 +13,12 @@ const TechnologyPage = () => {
   return (
     <main className="block sm:flex w-full mt-10">
       <section className="left">
-        <Heading
-          head1={"Technology"}
-          head2={"Circular H2O is commercializing"}
-        />
+        <div className="mb-14">
+          <Heading
+            head1={"Technology"}
+            head2={"Circular H2O is commercializing"}
+          />
+        </div>
         <div className="md:flex w-full">
           <div className="leading-6 mt-2 hidden md:block">
             <h6 className="font-bold text-lg">Some benefits</h6>

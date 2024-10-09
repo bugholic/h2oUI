@@ -7,10 +7,12 @@ const Information = () => {
   return (
     <main className="flex w-full gap-10 my-20">
       <section className="left">
-        <Heading
-          head1={"Who We Are"}
-          head2={"Mineral Extraction System optimizes"}
-        />
+        <div className="mb-14">
+          <Heading
+            head1={"Who We Are"}
+            head2={"Mineral Extraction System optimizes"}
+          />
+        </div>
         <p className="font-sm leading-8">
           Circular H2O, an Eden company, was founded with a mission to address
           the challenges surrounding energy-efficient mineral extraction and
@@ -23,7 +25,12 @@ const Information = () => {
         <br />
         <div className="sm:flex">
           <div className="hidden md:flex">
-            <Image priority={false} src={pageImage} width={400} alt="who are we" />
+            <Image
+              priority={false}
+              src={pageImage}
+              width={400}
+              alt="who are we"
+            />
           </div>
           <div className="">
             <div className="font-sm leading-8 md:ml-auto md:w-1/2">
@@ -31,9 +38,9 @@ const Information = () => {
               enabling a high purity selective mineral precipitation - leading
               to more control over the separation for the first time.
               <br />
-            <div className=" my-5">
-              <Button action="Lets Get Started" />
-            </div>
+              <div className=" my-5">
+                <Button action="Lets Get Started" />
+              </div>
             </div>
             <div className="mt-10">
               <h6 className="font-bold text-lg">Technology</h6>

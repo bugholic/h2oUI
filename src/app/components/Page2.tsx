@@ -4,11 +4,13 @@ const Page2 = () => {
   return (
     <main className="md:workExplainPage md:flex w-full gap-10 mt-10">
       <section className="left">
-        <Heading
-          head1="How It Works"
-          head2="In Mineral Extraction System Optimizes"
-        />
-        <div className="w-full md:extractionPage">
+        <div className="mb-14">
+          <Heading
+            head1="How It Works"
+            head2="In Mineral Extraction System Optimizes"
+          />
+        </div>
+        <div className="w-full md:workExplainPage">
           <div className="md:w-1/2">
             <div className="bg-gray-300 rounded-full w-10 p-2 text-center my-5">
               1

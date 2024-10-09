@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex w-full">
+      <nav className="flex w-full mt-8">
         <Link href="/">
           <Image alt="H2O" src={logo} width={100} />
         </Link>
@@ -40,6 +40,13 @@ const Navbar = () => {
             <Link href="/contact-us">Contact Us</Link>
           </span>
         </div>
+        <Link href={"/contact-us"}>
+          <Button
+            bgcolor="bg-blue-600"
+            textcolor="text-white"
+            action="Contact Us"
+          />
+        </Link>
 
         {/* Mobile navigation */}
         <div className="block ml-auto lg:hidden">
@@ -54,7 +61,7 @@ const Navbar = () => {
       {isMenuOpen && (
         <>
           <div className="flex flex-col">
-            <div className="navList items-center mx-3 w-full justify-center">
+            <div className="navList flex flex-col leading-6 items-center mx-3 w-full justify-center">
               <span>
                 <Link href="/">Home</Link>
               </span>
@@ -73,12 +80,13 @@ const Navbar = () => {
               <span>
                 <Link href="/contact-us">Contact Us</Link>
               </span>
+
+              <Button
+                bgcolor="bg-blue-600"
+                textcolor="text-white"
+                action="Let's Get Started"
+              />
             </div>
-            <Button
-              bgcolor="bg-blue-600"
-              textcolor="text-white"
-              action="Let's Get Started"
-            />
           </div>
         </>
       )}

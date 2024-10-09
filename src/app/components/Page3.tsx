@@ -60,24 +60,27 @@ const PageContent: FC<PageContentProto> = ({ data }) => {
           <Image src={learnmorearrow} alt="learnmorearrow" />
         </div>
       </div>
-        <div>
-          <div className="my-5 font-bold text-lg">The Problem</div>
-          <p className="font-light leading-6">{data.para1}</p>
-        </div>
-        <div>
-          <div className="my-5 font-bold text-lg">The Solution</div>
-          <p className="font-light leading-6">{data.para2}</p>
-        </div>
+      <div>
+        <div className="my-5 font-bold text-lg">The Problem</div>
+        <p className="font-light leading-6">{data.para1}</p>
+      </div>
+      <div>
+        <div className="my-5 font-bold text-lg">The Solution</div>
+        <p className="font-light leading-6">{data.para2}</p>
+      </div>
     </section>
   );
 };
 
 const Page3 = () => {
   return (
-    <main className="mt-20 borderY ">
-      <Heading head1={"Market Appplications"} />
-
-      <Heading head2={"Circular H2O Zero-Waste Water"} />
+    <main className="mt-20 border-b-2 border-gray-600 pb-5">
+      <div className="mb-14">
+        <Heading head1={"Market Appplications"} />
+      </div>
+      <div className="mb-14">
+        <Heading head2={"Circular H2O Zero-Waste Water"} />
+      </div>
 
       <div>
         {Object.values(pageData).map((data, index) => (

@@ -68,7 +68,7 @@ const Card: FC<cardProps> = ({ cardContentProps }) => {
 const NewsUpdate = () => {
   return (
     <main className="p-10 w-full">
-        <div className="text-center">
+        <div className="text-center mb-14">
       <Heading
         head1={" News And Updates"}
         />

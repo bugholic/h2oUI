@@ -13,36 +13,67 @@ body {
   font-family: "PP Neue Montreal", sans-serif;
 }
 
-.elmentSize{
-@apply p-5 lg:px-10
+.elmentSize {
+  @apply p-5 lg:px-10;
 }
 
-.primary-text-color{
-  color: #1B2745;
+.primary-text-color {
+  color: #1b2745;
 }
 
-nav>div>span {
+nav > div > span {
   transition: all ease-in-out 1ms;
   @apply mx-5 font-semibold;
 }
 
-nav>div>span:hover {
+nav > div > span:hover {
   border-bottom: 1px solid #494646;
 }
 
 .pagePointsSection {
   border-top: 2px solid gray;
-  border-bottom: 2px solid gray;
   padding: 10px 0;
 }
 
 footer {
-  background: #1B2745;
+  background: #1b2745;
 }
 
-
 .workExplainPage {
-  background-image:url('../../assets//images//view-water-splash.svg');
+  background-image: url("../../assets/images/view-water-splash.svg");
   width: auto;
   height: auto;
+}
+
+.labelForContactPage {
+  font-weight: bold;
+}
+.inputForContactPage {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid gainsboro;
+}
+
+.formForContactPage {
+  line-height: 2;
+  width: 600px;
+  margin: auto;
+  @apply max-sm:w-full;
+}
+
+.inputName {
+  width: 290px;
+  @apply max-sm:w-full;
+}
+
+.phoneNumberContactPage {
+  border-radius: 0 8px 8px 0;
+  border-left: none;
+}
+.selectContactPage {
+  padding: 10px 20px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid gainsboro;
+  border-right: none;
 }

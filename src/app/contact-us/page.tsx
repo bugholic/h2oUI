@@ -1,13 +1,15 @@
 import React from "react";
+import Heading from "../components/Heading";
+
 const page = () => {
   return (
     <main className="mt-10">
-      <h1 className="commonPageHeading text-center max-sm:font-semibold max-sm:text-3xl">
-        Contact Us
-      </h1>
-      <p className="primary-text-color text-center mt-5">Home/Contact Us</p>
+      <div className="text-center">
+        <Heading head1={"Contact Us"} />
+      </div>
+      <p className="primary-text-color text-center mt-5 md:text-xl">Home/Contact Us</p>
       <section className="mt-28">
-        <h3 className="primary-text-color text-center font-semibold lg:text-3xl">
+        <h3 className="primary-text-color text-center lg:text-5xl my-8 tracking-tighter">
           Send us a Message
         </h3>
         <form action="" className="formForContactPage leading-loose m-auto">

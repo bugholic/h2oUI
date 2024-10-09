@@ -10,7 +10,6 @@ type headingProto = {
 const Heading: FC<headingProto> = ({ head1, head2, pl }) => {
   return (
     <>
-      <div className="mb-14 flex flex-col m-auto w-full">
         <h1 className="primary-text-color text-5xl md:text-3xl lg:text-7xl tracking-tighter">
           {head1}
         </h1>
@@ -21,7 +20,6 @@ const Heading: FC<headingProto> = ({ head1, head2, pl }) => {
         >
           {head2}
         </h1>
-      </div>
     </>
   );
 };

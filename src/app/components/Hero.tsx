@@ -27,11 +27,11 @@ const Hero = () => {
               action="Let's Get Started"
             />
           </div>
-          <div className="mx-5">
+          <div className="mx-5 flex">
             <Button
               bgcolor="bg-white"
               textcolor="text-blue-600"
-              action="Learn More"
+              action="Learn More →"
             />
           </div>
         </div>
