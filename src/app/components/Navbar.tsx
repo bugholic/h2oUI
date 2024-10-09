@@ -40,13 +40,15 @@ const Navbar = () => {
             <Link href="/contact-us">Contact Us</Link>
           </span>
         </div>
+        <div className="hidden md:block">
         <Link href={"/contact-us"}>
           <Button
             bgcolor="bg-blue-600"
             textcolor="text-white"
             action="Contact Us"
-          />
+            />
         </Link>
+            </div>
 
         {/* Mobile navigation */}
         <div className="block ml-auto lg:hidden">
