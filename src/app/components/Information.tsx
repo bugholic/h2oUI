@@ -37,7 +37,7 @@ const Information = () => {
             </div>
             <div className="mt-10">
               <h6 className="font-bold text-lg">Technology</h6>
-              <div className=" mt-5 gap-16 pl-8 text-xs leading-6 md:flex">
+              <div className=" mt-5 gap-16 pl-8 text-sm leading-6 md:flex">
                 <ul className="list-disc">
                   <li>Evaporation and membrane free recovery</li>
                   <li>Improves efficiency in recovery rate</li>
