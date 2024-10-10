@@ -5,15 +5,15 @@ import Heading from "./Heading";
 const About = () => {
   return (
     <main className="gap-10 mt-10">
-      <div className="mb-14">
-        <Heading
-          head1={"About"}
-          head2={["Circular ", "H", <sub>2</sub>, "O"]}
-          pl={"pl-10"}
-        />
-      </div>
       <section className="md:flex ">
         <div>
+          <div className="mb-14">
+            <Heading
+              head1={"About"}
+              head2={["Circular ", "H", <sub>2</sub>, "O"]}
+              pl={"pl-10"}
+            />
+          </div>
           <p className="sm:w-3/4 md:text-sm lg:text-lg leading-6">
             Circular H2O, an Eden company, was founded with a mission to address
             the challenges surrounding energy-efficient mineral extraction and
@@ -36,7 +36,7 @@ const About = () => {
         <section className="right">
           <Image
             priority={false}
-            width={1200}
+            width={1500}
             className="rounded-md"
             src={pageImage}
             alt="about"

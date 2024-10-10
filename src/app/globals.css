@@ -2,15 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.cdnfonts.com/css/pp-neue-montreal");
-
 body {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
   background: #f0f2f5;
   width: 100%;
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: "Neue Montreal", sans-serif;
 }
 
 .elmentSize {
@@ -23,11 +21,11 @@ body {
 
 nav > div > span {
   transition: all ease-in-out 1ms;
-  @apply mx-5 font-semibold;
+  @apply mx-5;
 }
 
 nav > div > span:hover {
-  border-bottom: 1px solid #494646;
+  @apply border-b-2 border-button-primary-color;
 }
 
 .pagePointsSection {
@@ -40,9 +38,7 @@ footer {
 }
 
 .workExplainPage {
-  background-image: url("../../assets/images/view-water-splash.svg");
-  width: auto;
-  height: auto;
+  @apply bg-work-explain-page-bg bg-no-repeat bg-contain bg-center;
 }
 
 .labelForContactPage {

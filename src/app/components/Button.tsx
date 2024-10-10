@@ -9,13 +9,13 @@ type ButtonProps = {
 
 const Button: React.FC<ButtonProps> = ({ bgcolor, textcolor , border, action}) => {
   return (
-    <button
-      className={`btn ${bgcolor ? bgcolor : "bg-blue-600"} ${
+    <div
+      className={`btn ${bgcolor ? bgcolor : "bg-button-primary-color"} ${
         textcolor ? textcolor : "text-white"
-      } ${border ? border : ""} w-40 my-2 p-3 rounded-xl hover:bg-opacity-90`}
+      } ${border ? border : ""} w-40 my-2 p-3 rounded-xl hover:bg-opacity-90 text-center cursor-pointer`}
     >
     {action}
-    </button>
+    </div>
   );
 };
 

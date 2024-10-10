@@ -2,7 +2,7 @@ import Heading from "./Heading";
 
 const Page2 = () => {
   return (
-    <main className="md:workExplainPage md:flex w-full gap-10 mt-10">
+    <main className="md:flex w-full gap-10 mt-10">
       <section className="left">
         <div className="mb-14">
           <Heading
@@ -10,7 +10,7 @@ const Page2 = () => {
             head2="In Mineral Extraction System Optimizes"
           />
         </div>
-        <div className="w-full md:workExplainPage">
+        <div className="w-full md:workExplainPage md:bg-work-explain-page-bg bg-no-repeat bg-contain bg-center max-w-screen-lg;">
           <div className="md:w-1/2">
             <div className="bg-gray-300 rounded-full w-10 p-2 text-center my-5">
               1

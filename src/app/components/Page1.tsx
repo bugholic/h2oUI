@@ -2,7 +2,7 @@ import React from "react";
 
 const Page1 = () => {
   return (
-    <main className="w-full bg-blue-950 p-3 text-xs md:p-10 mt-10 leading-7">
+    <main className="w-full bg-night-blue p-3 text-xs md:p-10 mt-10 leading-7">
       <section className="md:grid gap-5 grid-flow-col grid-cols-3 md:my-10 text-white">
         <div className="my-10">
           <u className="text-center text-2xl italic ">The Problem</u>

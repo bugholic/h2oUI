@@ -9,8 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "button-primary-color": "#0070f3",
+        "night-blue": "#1B2745",
+        "button-footer": "#7A4C97",
+        "footer-box": "#001E4F",
+        "footer-text": "#F5F5F5",
+      },
+      backgroundImage: {
+        "work-explain-page-bg": "url('../../assets/images/view-water-splash.svg')",
       },
     },
   },

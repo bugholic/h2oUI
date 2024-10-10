@@ -1,7 +1,6 @@
 import Image from "next/image";
 import btnIcon from "../../../assets/icons/button Icons.svg";
 import Link from "next/link";
-import Button from "./Button";
 
 const footer = () => {
   return (
@@ -12,21 +11,21 @@ const footer = () => {
             Our mission is to address challenges and accelerate change in
             mineral extraction and water desalination.
           </div>
-          <div className="text-gray-300 mt-28 mb-5 leading-10 text-sm">
+          <div className="text-footer-text mt-28 mb-5 leading-10 text-sm">
             EMAIL ADDRESS
             <p>info@cicularh2o.com</p>
           </div>
         </div>
         <div>
         <Link href="/contact-us">
-          <div className="getInTouch w-full flex items-center justify-between px-10 py-3 text-white  bg-purple-600 rounded-full">
+          <div className="getInTouch w-full flex items-center justify-between px-10 py-3 text-white  bg-button-footer rounded-full">
             <div>Get in touch:</div>
             <div>
               <Image src={btnIcon} alt="btnIcon" width={50} />
             </div>
           </div>
           </Link>
-          <div className="bg-blue-950 mt-10 px-5 py-10 text-center rounded-3xl text-white">
+          <div className="bg-footer-box mt-10 px-5 py-10 text-center rounded-3xl text-white">
             <h2 className="font-bold text-3xl pb-2 sm:text-4xl">
               Let's get started
             </h2>
@@ -43,7 +42,7 @@ const footer = () => {
       <br />
       <br />
       <hr />
-      <div className="sm:flex justify-between text-white p-5 text-sm">
+      <div className="sm:flex justify-between text-footer-text p-5 text-sm">
         <p>© 2024 Circular H2O. All rights reserved.</p>
         <p>Privacy Policy</p>
       </div>
