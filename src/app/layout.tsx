@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <title>Circular H2O</title>
-      <body>
+      <body className="font-neue">
         <div className="p-5 lg:px-10">
           <Navbar />
         </div>

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import pageImage from "../../../assets/images/Group 7.svg";
 import Button from "./Button";

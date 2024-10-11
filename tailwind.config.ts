@@ -16,7 +16,13 @@ const config: Config = {
         "footer-text": "#F5F5F5",
       },
       backgroundImage: {
-        "work-explain-page-bg": "url('../../assets/images/view-water-splash.svg')",
+        "work-explain-page-bg":
+          "url('../../assets/images/view-water-splash.svg')",
+      },
+      fontFamily: {
+        'neue': ["NeueMontreal"], 
+        'neue-bold': ["NeueMontreal-Bold"], 
+        'neue-light': ["NeueMontreal-Light"],
       },
     },
   },

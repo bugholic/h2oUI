@@ -5,7 +5,7 @@ import logo from "../../../assets/logo/h2oLogo.svg";
 import menu from "../../../assets/icons/menu.svg";
 import Button from "./Button";
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +13,6 @@ const Navbar = () => {
   const handleMenuClick = () => {
     setIsMenuOpen((prev) => !prev);
   };
-
   return (
     <>
       <nav className="flex w-full mt-8">
@@ -25,7 +24,9 @@ const Navbar = () => {
             <Link href="/">Home</Link>
           </span>
           <span>
-            <Link href="/"> Who We Are </Link>
+            <Link href="/">
+              Who We Are
+            </Link>
           </span>
           <span>
             <Link href="/"> Market Applicaions </Link>
@@ -40,15 +41,15 @@ const Navbar = () => {
             <Link href="/contact-us">Contact Us</Link>
           </span>
         </div>
-        <div className="hidden md:block">
-        <Link href={"/contact-us"}>
-          <Button
-            bgcolor="bg-blue-600"
-            textcolor="text-white"
-            action="Contact Us"
+        <div className="hidden lg:block">
+          <Link href={"/contact-us"}>
+            <Button
+              bgcolor="bg-blue-600"
+              textcolor="text-white"
+              action="Contact Us"
             />
-        </Link>
-            </div>
+          </Link>
+        </div>
 
         {/* Mobile navigation */}
         <div className="block ml-auto lg:hidden">
