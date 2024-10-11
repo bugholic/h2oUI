@@ -7,15 +7,35 @@ import Button from "./Button";
 import Link from "next/link";
 import { useRef, useState } from "react";
 
-const Navbar = () => {
+interface NavbarProps {
+  heroRef: React.RefObject<HTMLDivElement>;
+  aboutRef: React.RefObject<HTMLDivElement>;
+  informationRef: React.RefObject<HTMLDivElement>;
+  technologyRef: React.RefObject<HTMLDivElement>;
+  howItWorksRef: React.RefObject<HTMLDivElement>;
+  marketApplicationsRef: React.RefObject<HTMLDivElement>;
+}
+
+const Navbar = ({
+  heroRef,
+  aboutRef,
+  informationRef,
+  technologyRef,
+  howItWorksRef,
+  marketApplicationsRef,
+}: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuClick = () => {
     setIsMenuOpen((prev) => !prev);
   };
+
+  const scrollToSection = (sectionRef: React.RefObject<HTMLDivElement>) => {
+    sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
-      <nav className="flex w-full mt-8">
+      <nav className="flex w-full mt-5">
         <Link href="/">
           <Image alt="H2O" src={logo} width={100} />
         </Link>
@@ -24,18 +44,48 @@ const Navbar = () => {
             <Link href="/">Home</Link>
           </span>
           <span>
-            <Link href="/">
+            <Link
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection(informationRef);
+              }}
+            >
               Who We Are
             </Link>
           </span>
           <span>
-            <Link href="/"> Market Applicaions </Link>
+            <Link
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection(marketApplicationsRef);
+              }}
+            >
+              Market Applicaions
+            </Link>
           </span>
           <span>
-            <Link href="/"> About Us </Link>
+            <Link
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection(aboutRef);
+              }}
+            >
+              About Us
+            </Link>
           </span>
           <span>
-            <Link href="/"> How It Works</Link>
+            <Link
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection(howItWorksRef);
+              }}
+            >
+              How It Works
+            </Link>
           </span>
           <span>
             <Link href="/contact-us">Contact Us</Link>
@@ -69,16 +119,48 @@ const Navbar = () => {
                 <Link href="/">Home</Link>
               </span>
               <span>
-                <Link href="/"> Who We Are </Link>
+                <Link
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(informationRef);
+                  }}
+                >
+                  Who We Are
+                </Link>
               </span>
               <span>
-                <Link href="/"> Market Applicaions </Link>
+                <Link
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(marketApplicationsRef);
+                  }}
+                >
+                  Market Applicaions
+                </Link>
               </span>
               <span>
-                <Link href="/"> About Us </Link>
+                <Link
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(aboutRef);
+                  }}
+                >
+                  About Us
+                </Link>
               </span>
               <span>
-                <Link href="/"> How It Works</Link>
+                <Link
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(howItWorksRef);
+                  }}
+                >
+                  How It Works
+                </Link>
               </span>
               <span>
                 <Link href="/contact-us">Contact Us</Link>

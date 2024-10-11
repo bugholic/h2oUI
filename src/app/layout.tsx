@@ -1,5 +1,4 @@
 import "./globals.css";
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export default function RootLayout({
@@ -12,7 +11,6 @@ export default function RootLayout({
       <title>Circular H2O</title>
       <body className="font-neue">
         <div className="p-5 lg:px-10">
-          <Navbar />
         </div>
         {children}
         <Footer />

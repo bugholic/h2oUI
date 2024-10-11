@@ -3,8 +3,19 @@ import btnArrow from "../../../assets/icons/learnmorearrow.svg";
 import waterSplash from "../../../assets/images/water-splashes-drop-vortex-background 1.svg";
 import realisticWaterDrop from "../../../assets/images/realistic-water-drop-with-ecosystem.png";
 import Image from "next/image";
+import { useRef } from "react";
+import Link from "next/link";
 
-const Hero = () => {
+interface HeroProps {
+  howItWorksRef: React.RefObject<HTMLDivElement>;
+}
+
+const Hero = ({ howItWorksRef }: HeroProps) => {
+  const scrollToSection = (sectionRef: React.RefObject<HTMLDivElement>) => {
+    if (sectionRef && sectionRef.current) {
+      sectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <main className="lg:flex w-full">
       <section className="left">
@@ -28,12 +39,20 @@ const Hero = () => {
               action="Let's Get Started"
             />
           </div>
-          <div className="mx-5 flex items-center justify-center w-40 my-2 p-3 rounded-xl hover:bg-opacity-90 text-center cursor-pointer bg-white text-button-primary-color">
-            Learn More
-            <span className="rotate-45">
-              <Image src={btnArrow} alt="btnIcon" width={18} height={18} />
-            </span>
-          </div>
+          <Link
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection(howItWorksRef);
+            }}
+          >
+            <div className="mx-5 flex items-center justify-center w-40 my-2 p-3 rounded-xl hover:bg-opacity-90 text-center cursor-pointer bg-white text-button-primary-color">
+              Learn More
+              <span className="rotate-45">
+                <Image src={btnArrow} alt="btnIcon" width={18} height={18} />
+              </span>
+            </div>
+          </Link>
         </div>
 
         <div className="mt-40 smallCard w-full hidden lg:flex">

@@ -10,7 +10,7 @@ const About = () => {
           <div className="mb-14">
             <Heading
               head1={"About"}
-              head2={["Circular ", "H", <sub>2</sub>, "O"]}
+              head2={"Circular H2O"}
               pl={"pl-10"}
             />
           </div>
