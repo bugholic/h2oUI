@@ -26,12 +26,17 @@ const Navbar = ({
 }: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   const handleMenuClick = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
   const scrollToSection = (sectionRef: React.RefObject<HTMLDivElement>) => {
     sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+    closeMenu();
   };
   return (
     <>
